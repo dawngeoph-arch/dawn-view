@@ -18,14 +18,15 @@ section{padding:88px 0}.section-head{text-align:center;margin-bottom:42px}.secti
 .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}.contact-card,.form{border:1px solid var(--line);background:#101010;padding:30px}.contact-row{display:flex;gap:15px;padding:16px 0;border-bottom:1px solid #242424}.contact-row strong{display:block;color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:1px}.contact-row span{color:#ddd}.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.social a{border:1px solid #333;padding:10px 14px;font-size:12px}.social a:hover{border-color:var(--gold);color:var(--gold)}
 form{display:grid;gap:13px}input,textarea{width:100%;background:#080808;border:1px solid #333;color:#fff;padding:14px;font:inherit}textarea{min-height:130px;resize:vertical}input:focus,textarea:focus{outline:none;border-color:var(--gold)}
 footer{border-top:1px solid var(--line);padding:35px 0;color:#777;text-align:center;font-size:12px}footer strong{color:var(--gold);letter-spacing:2px}
-@media(max-width:850px){.grid{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.links{display:none}.hero h2{line-height:1.8}.hero{min-height:80vh}}
-@media(max-width:520px){.grid{grid-template-columns:1fr}.section-head h2,.about h2{font-size:34px}.hero h1{font-size:57px}.wrap{padding:0 17px}}
+@media(max-width:850px){.grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.links{display:none}.hero h2{line-height:1.8}.hero{min-height:80vh}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}.section-head h2,.about h2{font-size:34px}.hero h1{font-size:57px}.wrap{padding:0 17px}}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery-item{height:260px;overflow:hidden;border:1px solid var(--line);background:#111}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s}.gallery-item:hover img{transform:scale(1.06)}
 </style>
 </head>
 <body>
 <header><div class="wrap"><nav>
 <a class="brand" href="#top"><span class="mark">DV</span><span>DAWN VIEW</span></a>
-<div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></div>
 </nav></div></header>
 
 <main id="top">
@@ -44,6 +45,19 @@ footer{border-top:1px solid var(--line);padding:35px 0;color:#777;text-align:cen
 <article class="card" style="background-image:url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85")"><div class="icon">✦</div><h3>Salon</h3><p>Professional hair styling and beauty care designed around your look and comfort.</p><a href="#contact">Book / Enquire →</a></article>
 <article class="card" style="background-image:url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85")"><div class="icon">◇</div><h3>Cosmetics</h3><p>Beauty essentials, skincare and carefully selected products for your daily routine.</p><a href="#contact">Ask about products →</a></article>
 <article class="card" style="background-image:url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85")"><div class="icon">▣</div><h3>Electronics</h3><p>Phones, accessories, gadgets and everyday tech to keep you connected.</p><a href="#contact">Ask about products →</a></article>
+</div></div></section>
+
+<section id="gallery" class="band"><div class="wrap">
+<div class="section-head"><div class="eyebrow">See the experience</div><h2>Dawn View Gallery</h2><p>A glimpse of the style, beauty and technology experience you can expect at Dawn View.</p></div>
+<div class="gallery-grid">
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85" alt="Modern barber shop"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=85" alt="Professional barber service"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85" alt="Modern salon interior"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=85" alt="Salon hair styling"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1000&q=85" alt="Beauty and cosmetics products"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1000&q=85" alt="Cosmetics and skincare"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=85" alt="Smartphone electronics"></div>
+<div class="gallery-item"><img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=1000&q=85" alt="Phone accessories and technology"></div>
 </div></div></section>
 
 <section id="about" class="band"><div class="wrap about">
